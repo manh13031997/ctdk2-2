@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a= +prompt("dãy số fibonacci là:");
+  let b=1;
+  let c=1;
+  let i;
+  let value="1' + ';'+' 1 '+'";
+  for (i=1;i<a;i++){
+    if (i===1){
+      value=1;
+    }else if (i===2){
+      value="1'+';'+'1'+'";
+    }else {
+      let temp;
+      temp=b+c
+      value=value+temp+';';
+      b=c;
+      c=temp;
+    }
+  }
+  document.write(b)
+</script>
+</body>
+</html>
